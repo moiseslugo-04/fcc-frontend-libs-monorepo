@@ -1,0 +1,8 @@
+[build]
+command  = "pnpm install && pnpm build"
+publish = "dist"
+
+[context.quote-machine]
+command = "pnpm --filter projects/quote-machine build"
+publish = "projects/quote-machine/dist"
+
