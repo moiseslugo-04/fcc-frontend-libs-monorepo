@@ -1,8 +1,0 @@
-[build]
-command = "pnpm --filter projects/quote-machine build"
-publish = "projects/quote-machine/dist"
-
-[context.quote-machine]
-command = "pnpm --filter projects/quote-machine build"
-publish = "projects/quote-machine/dist"
-

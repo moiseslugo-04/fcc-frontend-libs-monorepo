@@ -1,0 +1,20 @@
+.app {
+  min-width: 100%;
+  min-height: 100vh;
+}
+.grid-container {
+  width: 400px;
+}
+.buttons-card {
+  width: 60px;
+  height: 60px;
+}
+.btn-toggle {
+  width: 50px;
+  height: 20px;
+  padding: 0;
+}
+.switch {
+  width: 25px;
+  height: 100%;
+}

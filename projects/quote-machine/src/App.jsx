@@ -3,7 +3,7 @@ import { Facebook, Twitter } from 'lucide-react'
 import { useQuote } from './hook/useQuote'
 function App() {
   const { quote, getRandomQuote } = useQuote()
-  const twitterUrl = `https://x.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote?.text}`
+  const tweet = `?hashtags=quotes&related=freecodecamp&text=${quote?.text}`
   return (
     <main className='container-sm min-vh-100  d-flex flex-column justify-content-center align-items-center'>
       {quote ? (
@@ -25,7 +25,11 @@ function App() {
               <a href='https://www.facebook.com/?locale=pt_BR ' target='_blank'>
                 <Facebook size='16' className='p-1 icons' />
               </a>
-              <a id='tweet-quote' href={twitterUrl} target='_blank'>
+              <a
+                id='tweet-quote'
+                href={`https://twitter.com/intent/tweet${tweet}`}
+                target='_blank'
+              >
                 <Twitter size='16' className='p-1 icons' />
               </a>
             </div>
